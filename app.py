@@ -8,7 +8,7 @@ ADMIN_USERNAME = "admin"
 ADMIN_PASSWORD = "admin"
 
 # Pagina di login
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('login', methods=['GET', 'POST'])
 def login():
     if session.get('username') == ADMIN_USERNAME:
         return redirect(url_for('admin'))
