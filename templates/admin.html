@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='usr-manager/templates/style.css') }}">
 </head>
 <body>
     <h1>Area Admin</h1>
     <p>Benvenuto, admin!</p>
     <img src="{{ url_for('static', filename='admin_image.jpg') }}" alt="Immagine Admin">
-    <a href="/logout">Logout</a>
+    <a href="usr-manager/templates/logout">Logout</a>
 </body>
 </html>
