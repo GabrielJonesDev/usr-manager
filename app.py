@@ -20,13 +20,13 @@ def login():
             return redirect(url_for('admin'))
         else:
             return "Login fallito. Riprova."
-    return render_template('login.html')
+    return render_template('usr-manager/templates/login.html')
 
 # Pagina admin con la foto
 @app.route('/admin')
 def admin():
     if session.get('username') == ADMIN_USERNAME:
-        return render_template('admin.html')
+        return render_template('usr-manager/templates/admin.html')
     else:
         return redirect(url_for('login'))
 
